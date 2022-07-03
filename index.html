@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<button onclick="play()" type="button">playbutton</button>
+<button onclick="stop()" type="button">stopbutton</button>
+
+<audio id="audioID" autoplay loop> <source src="hbd.mp3"  type="audio/mp3"> 
+</audio>
+
+<script>
+var myaudio = document.getElementById("audioID");
+
+function play() { 
+return myaudio.play(); 
+};
+
+function stop() {
+return myaudio.pause(); 
+};
+</script>
+
+
+</body>
+</html>
+
